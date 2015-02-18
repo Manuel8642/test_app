@@ -113,7 +113,29 @@
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
-	<div class="container">
+	
+	<ion-pane>
+	  <ion-header-bar class="bar-stable">
+		<h1 class="title">Devdactic Media Popover</h1>
+	  </ion-header-bar>
+	  <ion-content class="has-header padding" ng-controller="MediaCtrl">
+		  <br><br>
+		<div class="item item-divider">
+			<i class="ion-images"></i>
+			My Images
+		</div>
+		<a class="item item-list-detail">
+			<ion-scroll direction="x">
+				<img ng-repeat="image in allImages" ng-src="{{image.src}}" ng-click="showImages($index)" class="image-list-thumb"/>
+			</ion-scroll>
+		</a>
+		<br><br>
+		<div class="button-bar">
+		<button class="button button-outline button-positive" ng-click="playVideo()">Play a video</button>
+	</div>
+	  </ion-content>
+	</ion-pane>
+	<!--<div class="container">
 		<div class="header">
 			<h1>Header</h1>
 		</div>
@@ -123,7 +145,7 @@
 		<div class="menu2">
 			<div class="menuItem">
 				<div class="imgItem">
-					<img src="ico4.png" alt="image" align="center" height="50" width="50">
+					<img src="./img/ico4.png" alt="image" align="center" height="50" width="50">
 				</div>
 				<div class="txtItem">
 					<h2>Menu1</h2>
@@ -152,30 +174,27 @@
 		</div>
 		<div class="footer">
 			<div class="col_30">
-				<img src="ico1.png" alt="image" align="center" height="50" width="50">
+				<img src="./img/ico1.png" alt="image" align="center" height="50" width="50">
 			</div>
 			<div class="col_30">
-				<img src="ico2.png" alt="image" align="center" height="50" width="50">
+				<img src="./img/ico2.png" alt="image" align="center" height="50" width="50">
 			</div>
 			<div class="col_30">
-				<img src="ico3.png" alt="image" align="center" height="50" width="50">
+				<img src="./img/ico3.png" alt="image" align="center" height="50" width="50">
 			</div>
-			
 		</div>
-	</div>
+	</div>-->
 	<!--
     <ion-nav-bar class="bar-stable">
       <ion-nav-back-button>
       </ion-nav-back-button>
     </ion-nav-bar>
-	
-	<ion-nav-view></ion-nav-view>
 	-->
     <!--
       The views will be rendered in the <ion-nav-view> directive below
       Templates are in the /templates folder (but you could also
       have templates inline in this html file if you'd like).
     -->
-    
+    <ion-nav-view></ion-nav-view>
   </body>
 </html>
