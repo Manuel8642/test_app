@@ -1,1 +1,84 @@
 /* Empty. Add your own CSS if you like */
+
+.row
+		{
+			overflow: hidden;
+			margin: 5px auto;
+			padding-left: 150px;
+			align: center;
+		    width: 100%;
+		    float: left;
+		}
+		.row_100
+		{
+			overflow: hidden;
+			align: center;
+			width: 100%;
+		    float: left;
+		}
+		.col
+		{
+		    
+		    width: 50%;
+		    float: left;
+			
+		}
+		.col_30
+		{
+			overflow: hidden;
+		    width: 33%;
+		    float: left;
+			text-align: center;
+		}
+		.menu2
+		{
+		    width: 100%;
+			float: left;
+		}
+		.footer
+		{
+			width: 100%;
+			float: left;
+		}
+		.container
+		{
+		    width: 100%;
+			float: left;
+			margin: 30px auto;
+			overflow: hidden;
+		}
+		
+		.header
+		{
+			width: 100%;
+			float: left;
+			overflow: hidden;
+			text-align: center;
+			
+			
+		}
+		.menuItem
+		{
+			width: 100%;
+			overflow: hidden;
+			float: left;
+			background-color: rgb(68,68,68);			
+			
+		}
+		.imgItem
+		{
+			width: 35%;
+			overflow: hidden;
+			float: left;	
+			
+			
+		}
+		.txtItem
+		{
+			width: 65%;
+			overflow: hidden;
+			float: left;	
+		    text-align: left;
+			color: white
+			
+		}
