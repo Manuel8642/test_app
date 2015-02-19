@@ -70,6 +70,14 @@
 			float: left;
 			
 		}
+		.image
+		{
+			background-color: white;
+		    width: 46%;
+			float: left;
+			margin: 2%;
+			
+		}
 		.col_100
 		{
 			background-color: white;
