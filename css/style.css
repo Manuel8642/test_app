@@ -57,6 +57,13 @@
 			float: left;
 			
 		}
+		.col_100
+		{
+			background-color: white;
+		    width: 100%;
+			float: left;
+			
+		}
 		.col_50_right
 		{
 			background-color: white;
@@ -65,12 +72,33 @@
 			margin-left: 4%;
 			
 		}
+		.col_40
+		{
+			background-color: white;
+		    width: 40%;
+			float: left;
+			
+		}
+		.col_40_right
+		{
+			background-color: white;
+		    width: 40%;
+			float: left;
+			margin-left: 2%;
+			
+		}
 		.col_30
 		{
-			overflow: hidden;
-		    width: 33%;
-		    float: left;
-			text-align: center;
+			background-color: white;
+		    width: 28%;
+			float: left;
+		}
+		.col_30_right
+		{
+			background-color: white;
+		    width: 28%;
+			float: left;
+			margin-left: 2%;
 		}
 		.menu2
 		{
