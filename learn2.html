@@ -16,8 +16,24 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+    <script src="js/jQuery.js"></script>
 
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script type="text/javascript">
+
+    	        var loading = function() {
+        // add the overlay with loading image to the page
+		        var over = '<div id="overlay">' +
+		            '<img id="loading" src="img/loader.GIF">' +
+		            '</div>';
+		        $(over).appendTo('body');
+
+		        setTimeout(function() {
+			        $('#overlay').remove();
+			    }, 1450);
+		    };
+    </script>
     <!-- your app's js -->
 	<!--
     <script src="js/app.js"></script>
@@ -27,7 +43,7 @@
 	-->
 	
   </head>
-  <body ng-app="starter">
+  <body ng-app="starter" onload="loading();">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
@@ -56,12 +72,12 @@
 	-->
 	<div class="container">
 		<div class="header">
-			<img src="img/avail.png" alt="image" align="center" height="50" width="150">
+			<img src="img/avail.png" alt="image" align="center" height="50" width="150"/>
 		</div>
 		<div class="menu2">
 			<div class="block_100">
 				<div class="fill_white">
-					<img src="img/main_image.png" alt="image" align="center" height="50%" width="100%">
+					<img src="img/main_image.png" alt="image" align="center" height="50%" width="100%"/>
 					
 				</div>
 			
@@ -71,13 +87,13 @@
 				
 					<div class="fill_blue">
 						<div class="col_30">
-							<img src="img/arrow_left.png" alt="image" align="center" height="110" width="100%">
+							<img src="img/arrow_left.png" alt="image" align="center" height="110" width="100%"/>
 						</div>
 						<div class="col_40_right">
-							<img src="img/help.png" alt="image" align="center" height="110" width="100%">
+							<img src="img/help.png" alt="image" align="center" height="110" width="100%"/>
 						</div>
 						<div class="col_30_right">
-							<img src="img/arrow_right.png" alt="image" align="center" height="110" width="100%">
+							<img src="img/arrow_right.png" alt="image" align="center" height="110" width="100%"/>
 						</div>
 					</div>
 					
@@ -88,7 +104,9 @@
 			
 		</div>
 		<div class="footer">
-			<img src="img/avail_foot.png" alt="image" align="center" height="50" width="190">			
+			<a href="login.html">
+				<img src="img/avail_foot.png" alt="image" align="center" height="50" width="190"/>
+			</a>				
 		</div>
 	</div>
 	<!--

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.avail.support"
+        versionCode = "10" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>Avail</name>
+
+    <description>
+        The official Avail Support app
+    </description>
+
+    <author href="https://availsupport.ie" email="support@availsupport.ie">
+        Lisa Marie Clinton
+    </author>
+
+    <preference name="orientation" value="portrait" />
+
+    <icon src="img/assets/ldpi.png" gap:platform="android" gap:qualifier="ldpi" />
+    <icon src="img/assets/mdpi.png" gap:platform="android" gap:qualifier="mdpi" />
+    <icon src="img/assets/hdpi.png" gap:platform="android" gap:qualifier="hdpi" />
+    <icon src="img/assets/xhdpi.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <icon src="img/assets/xxhdpi.png" gap:platform="android" gap:qualifier="xxhdpi" />
+
+    <gap:splash src="img/assets/splash.png" gap:platform="android" gap:qualifier="ldpi" />
+    <gap:splash src="img/assets/splash.png" gap:platform="android" gap:qualifier="mdpi" />
+    <gap:splash src="img/assets/splash.png" gap:platform="android" gap:qualifier="hdpi" />
+    <gap:splash src="img/assets/splash.png" gap:platform="android" gap:qualifier="xhdpi" />
+    <gap:splash src="img/assets/splash.png" gap:platform="android" gap:qualifier="fr-xhdpi" />
+    <gap:splash src="img/assets/splash.png" gap:platform="android" gap:qualifier="port-xxhdpi" />
+    <gap:splash src="img/assets/splash.png" gap:platform="android" gap:qualifier="land-xxhdpi" />
+
+</widget>

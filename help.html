@@ -16,8 +16,24 @@
     <script src="lib/ionic/js/ionic.bundle.js"></script>
 
     <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
+    <script src="js/jQuery.js"></script>
 
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+    <script type="text/javascript">
+
+    	        var loading = function() {
+        // add the overlay with loading image to the page
+		        var over = '<div id="overlay">' +
+		            '<img id="loading" src="img/loader.GIF">' +
+		            '</div>';
+		        $(over).appendTo('body');
+
+		        setTimeout(function() {
+			        $('#overlay').remove();
+			    }, 1450);
+		    };
+    </script>
     <!-- your app's js -->
 	<!--
     <script src="js/app.js"></script>
@@ -27,7 +43,7 @@
 	-->
 	
   </head>
-  <body ng-app="starter">
+  <body ng-app="starter" onload="loading();">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
@@ -60,25 +76,7 @@
 		</div>
 		<div class="menu2">
 			<div class="block_100">
-				<div class="fill_white">
 					<img src="img/main_image2.png" alt="image" align="center" height="45%" width="100%">
-					
-				</div>
-			
-				
-			</div>
-			<div class="block_100">
-				
-					<div class="fill_blue">
-						<div class="col_100">
-							<img src="img/continue.png" alt="image" align="center" height="22%" width="100%">
-						</div>
-						
-					</div>
-					
-					
-				
-				
 			</div>
 			
 		</div>
