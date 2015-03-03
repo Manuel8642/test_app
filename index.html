@@ -22,17 +22,32 @@
     <script src="cordova.js"></script>
     <script type="text/javascript">
 
-    	        var loading = function() {
-        // add the overlay with loading image to the page
-		        var over = '<div id="overlay">' +
-		            '<img id="loading" src="img/loader.GIF">' +
-		            '</div>';
+				
+    	        function load(site) {
+				
+					
+					window.location.href = site;
+					sleep(50);
+
+					
+				};
+				
+				/*
+				
+				var loading = function() {
+				
+				
+		        var over = 
+				'<div id="overlay" style="filter:alpha(opacity=50); opacity:0.5;">'+
+				'</div> ';
 		        $(over).appendTo('body');
 
 		        setTimeout(function() {
 			        $('#overlay').remove();
-			    }, 3450);
+			    }, 50);
 		    };
+				
+				*/
     </script>
     <!-- your app's js -->
 	<!--
@@ -43,7 +58,7 @@
 	-->
 	
   </head>
-  <body ng-app="starter" onload="loading();">
+  <body ng-app="starter" >
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
@@ -76,10 +91,10 @@
 		</div>
 		<div class="menu2">
 			<div class="block_90">
-				<div class="fill_white">
-					<a href="learn.html">
-						<img src="img/avail_learn.png" alt="image" align="center" height="170" width="305"/>
-					</a>
+				<div class="fill_white" onclick="load('learn.html')">
+					
+						<img  src="img/avail_learn.png" alt="image" align="center" height="170" width="305"/>
+
 				</div>
 			
 				
@@ -87,15 +102,14 @@
 			<div class="block_90">
 				
 					<div class="fill_blue">
-						<div class="col_50">
-							<a href="todo.html">
-								<img src="img/avail_todo.png" alt="image" align="center" height="130" width="120">
-							</a>
+						<div class="col_50" onclick="load('todo.html')">
+								<img  src="img/avail_todo.png" alt="image" align="center" height="130" width="120">
+							
 						</div>
-						<div class="col_50_right">
-							<a href="help.html">
+						<div class="col_50_right" onclick="load('help.html')">
+							
 								<img src="img/avail_help.png" alt="image" align="center" height="130" width="120"/>
-							</a>
+					
 							
 						</div>
 					</div>
@@ -106,10 +120,9 @@
 			</div>
 			
 		</div>
-		<div class="footer">
-			<a href="login.html">
+		<div class="footer" onclick="load('login.html')">
 				<img src="img/avail_foot.png" alt="image" align="center" height="50" width="190">
-			</a>
+			
 		</div>
 	</div>
 	<!--

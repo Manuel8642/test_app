@@ -22,6 +22,15 @@
     <script src="cordova.js"></script>
     <script type="text/javascript">
 
+				function load(site) {
+							
+								
+								window.location.href = site;
+								sleep(50);
+
+					
+				};
+				/*
     	        var loading = function() {
         // add the overlay with loading image to the page
 		        var over = '<div id="overlay">' +
@@ -32,7 +41,7 @@
 		        setTimeout(function() {
 			        $('#overlay').remove();
 			    }, 1450);
-		    };
+		    };*/
     </script>
     <!-- your app's js -->
 	<!--
@@ -43,7 +52,7 @@
 	-->
 	
   </head>
-  <body ng-app="starter" onload="loading();">
+  <body ng-app="starter">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
@@ -78,57 +87,37 @@
 			
 			<div class="block_100">
 				
-					<div class="fill_blue">
-						<a href="learn2.html">
-							<div class="check-row">
-								<div class="check-text">
-								Make Coffee
-								</div>
-								<div class="check-box">
-									<img src="img/checkbox-on.png" style="width:10vw;">
-								</div>								
+					<div class="fill_blue" >
+					
+							<div class="block_100" onclick="load('learn2.html')">
+							
+								<img src="img/make_coffee.png" >
+								
 							</div>
-						</a>
-						<a href="learn2.html">
-							<div class="check-row">
-								<div class="check-text">
-								Check Email
-								</div>
-								<div class="check-box">
-									<img src="img/checkbox-on.png" style="width:10vw;">
-								</div>								
+						
+						
+							<div class="block_100">
+								
+								<img src="img/reply.png" s>
+														
 							</div>
-						</a>
-						<a href="learn2.html">
-							<div class="check-row">
-								<div class="check-text">
-								Call Clients
-								</div>
-								<div class="check-box">
-									<img src="img/checkbox-off.png" style="width:10vw;">
-								</div>								
+				
+						
+							<div class="block_100">
+								<img src="img/turn-on.png" >
+														
 							</div>
-						</a>
-						<a href="learn2.html">
-							<div class="check-row">
-								<div class="check-text">
-								Print Flyers
-								</div>
-								<div class="check-box">
-									<img src="img/checkbox-off.png" style="width:10vw;">
-								</div>								
+						
+							<div class="block_100">
+								<img src="img/voicemail.png">
+													
 							</div>
-						</a>
-						<a href="learn2.html">
-							<div class="check-row">
-								<div class="check-text">
-								Do Report
-								</div>
-								<div class="check-box">
-									<img src="img/checkbox-off.png" style="width:10vw;">
-								</div>								
+					
+							<div class="block_100">
+								<img src="img/print-out.png">
+												
 							</div>
-						</a>
+					
 						
 					</div>
 					
@@ -138,10 +127,10 @@
 			</div>
 			
 		</div>
-		<div class="footer">
-			<a href="login.html">
+		<div class="footer" onclick="load('login.html')">
+			
 				<img src="img/avail_foot.png" alt="image" align="center" height="50" width="190">
-			</a>
+			
 		</div>
 	</div>
 	<!--

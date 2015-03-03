@@ -20,8 +20,17 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-    <script type="text/javascript">
+   <script type="text/javascript">
 
+				function load(site) {
+							
+								
+								window.location.href = site;
+								sleep(50);
+
+					
+				};
+				/*
     	        var loading = function() {
         // add the overlay with loading image to the page
 		        var over = '<div id="overlay">' +
@@ -31,8 +40,8 @@
 
 		        setTimeout(function() {
 			        $('#overlay').remove();
-			    }, 1450);
-		    };
+			    }, 145
+		    };*/
     </script>
     <!-- your app's js -->
 	<!--
@@ -43,7 +52,7 @@
 	-->
 	
   </head>
-  <body ng-app="starter" onload="loading();">
+  <body ng-app="starter">
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
@@ -89,7 +98,7 @@
 						<div class="col_30">
 							<img src="img/arrow_left.png" alt="image" align="center" height="110" width="100%"/>
 						</div>
-						<div class="col_40_right">
+						<div class="col_40_right" onclick="load('help.html')">
 							<img src="img/help.png" alt="image" align="center" height="110" width="100%"/>
 						</div>
 						<div class="col_30_right">
@@ -103,10 +112,10 @@
 			</div>
 			
 		</div>
-		<div class="footer">
-			<a href="login.html">
+		<div class="footer onclick="load('login.html')">
+			
 				<img src="img/avail_foot.png" alt="image" align="center" height="50" width="190"/>
-			</a>				
+						
 		</div>
 	</div>
 	<!--

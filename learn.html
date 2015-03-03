@@ -20,17 +20,27 @@
     <script src="cordova.js"></script>
     <script type="text/javascript">
 
+				function load(site) {
+							
+								
+								window.location.href = site;
+								sleep(50);
+
+					
+				};
+				/*
     	        var loading = function() {
-        // add the overlay with loading image to the page
-		        var over = '<div id="overlay">' +
-		            '<img id="loading" src="img/loader.GIF">' +
-		            '</div>';
+				
+				
+		        var over = 
+				'<div id="overlay" style="filter:alpha(opacity=50); opacity:0.5;">'+
+				'</div> ';
 		        $(over).appendTo('body');
 
 		        setTimeout(function() {
 			        $('#overlay').remove();
-			    }, 1450);
-		    };
+			    }, 50);
+		    };*/
     </script>
     <!-- your app's js -->
 	<!--
@@ -41,7 +51,7 @@
 	-->
 	
   </head>
-  <body ng-app="starter" onload="loading();">
+  <body ng-app="starter" >
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
@@ -81,10 +91,10 @@
 							<img src="img/email.png" alt="image" align="center" height="30%" width="100%"/>
 						
 					</div>
-					<div class="image">
-						 <a href="learn2.html">
+					<div class="image" onclick="load('learn2.html')">
+						
 							<img src="img/coffee.png" alt="image" align="center" height="30%" width="100%"/>
-						 </a>
+						
 					</div>
 					
 					
@@ -125,10 +135,10 @@
 			
 			
 		</div>
-		<div class="footer">
-			<a href="login.html">
+		<div class="footer" onclick="load('login.html')">
+			
 				<img src="img/avail_foot.png" alt="image" align="center" height="50" width="190">	
-			</a>
+			
 		</div>
 	</div>
 	<!--
@@ -145,3 +155,4 @@
     <ion-nav-view></ion-nav-view>
   </body>
 </html>
+

@@ -22,6 +22,16 @@
     <script src="cordova.js"></script>
     <script type="text/javascript">
 
+	
+				function load(site) {
+							
+								
+								window.location.href = site;
+								sleep(50);
+
+					
+				};
+				/*
     	        var loading = function() {
         // add the overlay with loading image to the page
 		        var over = '<div id="overlay">' +
@@ -32,7 +42,7 @@
 		        setTimeout(function() {
 			        $('#overlay').remove();
 			    }, 1450);
-		    };
+		    };*/
     </script>
     <!-- your app's js -->
 	<!--
@@ -44,7 +54,7 @@
 	
 	
   </head>
-  <body ng-app="starter" onload="loading();">
+  <body ng-app="starter" >
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
@@ -92,7 +102,7 @@
 							</div>
 
 							
-								<img src="img/login.png" alt="image" align="center" height="40%" width="100%"/>
+								<!--<img src="img/login.png" alt="image" align="center" height="40%" width="100%"/>-->
 						
 
 						</div>
