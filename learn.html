@@ -18,23 +18,32 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-     <script type="text/javascript">
+    <script type="text/javascript">
 
-				var clicked=false;
+				var clickable=true;
 				
     	        function load(site) 
 				{
-				
-					if(clicked==false)
+					console.log("load");
+					if(clickable)
 					{
 						window.location.href = site;
-						clicked=!clicked;
-						sleep(50);
 					
 					}
 					
 
 					
+				};
+				
+				function start() 
+				{
+					console.log("start");
+					clickable=false;
+					setTimeout(function(){
+						clickable=true;
+					}, 50);
+					
+										
 				};
 				
 				/*
@@ -63,7 +72,7 @@
 	-->
 	
   </head>
-  <body ng-app="starter" >
+  <body ng-app="starter" onload="start()" >
     <!--
       The nav bar that will be updated as we navigate between views.
     -->
