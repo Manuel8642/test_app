@@ -22,15 +22,18 @@
     <script src="cordova.js"></script>
     <script type="text/javascript">
 
-				var counter=0;
+				var clicked=false;
 				
     	        function load(site) 
 				{
 				
-					
-					
+					if(clicked==false)
+					{
 						window.location.href = site;
-						sleep(100);
+						clicked=!clicked;
+						sleep(50);
+					
+					}
 					
 
 					
