@@ -18,18 +18,27 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-    <script type="text/javascript">
+     <script type="text/javascript">
 
-				function load(site) {
-							
-								
-								window.location.href = site;
-								sleep(50);
+				var counter=0;
+				
+    	        function load(site) 
+				{
+				
+					counter++;
+					if(counter>=2)
+					{
+					
+						window.location.href = site;
+					
+					}
 
 					
 				};
+				
 				/*
-    	        var loading = function() {
+				
+				var loading = function() {
 				
 				
 		        var over = 
@@ -40,7 +49,9 @@
 		        setTimeout(function() {
 			        $('#overlay').remove();
 			    }, 50);
-		    };*/
+		    };
+				
+				*/
     </script>
     <!-- your app's js -->
 	<!--

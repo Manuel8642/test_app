@@ -22,12 +22,18 @@
     <script src="cordova.js"></script>
     <script type="text/javascript">
 
+				var counter=0;
 				
-    	        function load(site) {
+    	        function load(site) 
+				{
 				
+					counter++;
+					if(counter>=2)
+					{
 					
-					window.location.href = site;
-					sleep(50);
+						window.location.href = site;
+					
+					}
 
 					
 				};

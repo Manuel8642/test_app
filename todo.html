@@ -22,26 +22,38 @@
     <script src="cordova.js"></script>
     <script type="text/javascript">
 
-				function load(site) {
-							
-								
-								window.location.href = site;
-								sleep(50);
+				var counter=0;
+				
+    	        function load(site) 
+				{
+				
+					counter++;
+					if(counter>=2)
+					{
+					
+						window.location.href = site;
+					
+					}
 
 					
 				};
+				
 				/*
-    	        var loading = function() {
-        // add the overlay with loading image to the page
-		        var over = '<div id="overlay">' +
-		            '<img id="loading" src="img/loader.GIF">' +
-		            '</div>';
+				
+				var loading = function() {
+				
+				
+		        var over = 
+				'<div id="overlay" style="filter:alpha(opacity=50); opacity:0.5;">'+
+				'</div> ';
 		        $(over).appendTo('body');
 
 		        setTimeout(function() {
 			        $('#overlay').remove();
-			    }, 1450);
-		    };*/
+			    }, 50);
+		    };
+				
+				*/
     </script>
     <!-- your app's js -->
 	<!--
@@ -89,32 +101,32 @@
 				
 					<div class="fill_blue" >
 					
-							<div class="block_100" onclick="load('learn2.html')">
+							<div class="check-row" onclick="load('learn2.html')">
 							
-								<img src="img/make_coffee.png" >
+								<img src="img/make_coffee.png"   height="100%" width="90%"/>
 								
 							</div>
 						
 						
-							<div class="block_100">
+							<div class="check-row">
 								
-								<img src="img/reply.png" >
+								<img src="img/reply.png"  height="100%" width="90%"/>
 														
 							</div>
 				
 						
-							<div class="block_100">
-								<img src="img/turn-on.png" >
+							<div class="check-row">
+								<img src="img/turn-on.png"  height="100%" width="90%"/>
 														
 							</div>
 						
-							<div class="block_100">
-								<img src="img/voicemail.png">
+							<div class="check-row">
+								<img src="img/voicemail.png"  height="100%" width="90%"/>
 													
 							</div>
 					
-							<div class="block_100">
-								<img src="img/print-out.png">
+							<div class="check-row">
+								<img src="img/print-out.png"  height="100%" width="90%"/>
 												
 							</div>
 					

@@ -20,28 +20,40 @@
 
     <!-- cordova script (this will be a 404 during development) -->
     <script src="cordova.js"></script>
-    <script type="text/javascript">
+     <script type="text/javascript">
 
-				function load(site) {
-							
-								
-								window.location.href = site;
-								sleep(50);
+				var counter=0;
+				
+    	        function load(site) 
+				{
+				
+					counter++;
+					if(counter>=2)
+					{
+					
+						window.location.href = site;
+					
+					}
 
 					
 				};
+				
 				/*
-    	        var loading = function() {
-        // add the overlay with loading image to the page
-		        var over = '<div id="overlay">' +
-		            '<img id="loading" src="img/loader.GIF">' +
-		            '</div>';
+				
+				var loading = function() {
+				
+				
+		        var over = 
+				'<div id="overlay" style="filter:alpha(opacity=50); opacity:0.5;">'+
+				'</div> ';
 		        $(over).appendTo('body');
 
 		        setTimeout(function() {
 			        $('#overlay').remove();
-			    }, 1450);
-		    };*/
+			    }, 50);
+		    };
+				
+				*/
     </script>
     <!-- your app's js -->
 	<!--
@@ -81,20 +93,20 @@
 	-->
 	<div class="container">
 		<div class="header">
-			<img src="img/avail.png" alt="image" align="center" height="50" width="150">
+			<img src="img/avail.png" alt="image" align="center" height="50" width="150"/>
 		</div>
 		<div class="menu2">
 			<div class="block_100">
-					<img src="img/main_image2.png" alt="image" align="center" height="45%" width="100%">
+					<img src="img/main_image2.png" alt="image" align="center" height="45%" width="100%"/>
 			</div>
 			<div class="block_100" onclick="load('learn.html')">
-					<img src="img/continue.png" alt="image" align="center" height="45%" width="100%">
+					<img src="img/continue.png" alt="image" align="center" height="45%" width="100%"/>
 			</div>
 			
 		</div>
 		<div class="footer" onclick="load('login.html')">
 		
-				<img src="img/avail_foot.png" alt="image" align="center" height="50" width="190">	
+				<img src="img/avail_foot.png" alt="image" align="center" height="50" width="190"/>	
 			
 		</div>
 	</div>
